@@ -145,7 +145,6 @@ func BuildWord(codedWord string, treeRoot *Node) string {
 	var word, letter string
 	for len(directions) > 0 && directions != nil {
 		letter, directions = treeRoot.ReachLetter(directions)
-		fmt.Println(letter)
 		word += letter
 	}
 	return word
